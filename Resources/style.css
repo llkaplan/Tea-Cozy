@@ -1,3 +1,35 @@
 body {
-  background-color: orange;
+  background-color: black;
+  font-size: 22px;
+  font-family: Helvetica;
+  color: seashell;
+  opacity: 0.9;
+}
+.header {
+  display: flex;
+  height: 69px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid seashell;
+}
+
+.logo {
+ padding-left: 10px;
+}
+
+.logo img {
+  height: 50px;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.navigation li {
+  display: inline-block;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-decoration: underline;
 }
