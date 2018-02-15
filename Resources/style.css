@@ -1,4 +1,8 @@
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   background-color: black;
   font-size: 22px;
   font-family: Helvetica;
@@ -14,8 +18,8 @@ body {
   background-color: black;
   border-bottom: 1px solid seashell;
   position: fixed;
+  z-index: 1;
 }
-
 
 .logo img {
   padding-left: 10px;
@@ -35,17 +39,40 @@ body {
 }
 
 .top {
-    height: 700px;
-    background: url("Images/img-mission-background.jpg");
-    background-repeat: no-repeat;
-    background-size: auto 700px;
-    background-position: center;
+  display: flex;
+  align-content: center;
+  height: 700px;
+  background: url("Images/img-mission-background.jpg");
+  background-repeat: no-repeat;
+  background-size: auto 700px;
+  background-position: center;
 }
 
 .titles {
   position: relative;
   width: 100%;
+  max-height: 150px;
   background: black;
   top: 300px;
   text-align: center;
+}
+
+.middle1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+}
+.teaOfMonth {
+  width: 100%;
+  text-align: center;
+}
+.images {
+  padding: 10px;
+  text-align: center;
+}
+.smallImages {
+  height: 200px;
+  width: 300px;
 }
